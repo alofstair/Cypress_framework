@@ -15,7 +15,7 @@ Cypress.Commands.add('login', (url, username, password) => {
         cy.get('.btn').should('contain.text', 'Log In').click()
     })
 })
-// this'd be used in a spec toi preserve the session between tests so as to not have to log in each time
+// this'd be used in a spec to preserve the session between tests so as to not have to log in each time
 // describe('tests', () => {
 //   beforeEach(() => {cy.login()
 //     });
@@ -24,6 +24,6 @@ Cypress.Commands.add("clickLinkWithHrefDynamicPart[item]", (dynamic) => {
     cy.get(`a[href*="${dynamic}/]`).click();
 });
 // this will be paired with:
-// const  dynamic= "[vaue]"
+// const  dynamic= "[value]"
 //cy.clickLinkWithHrefDynamicPart[item](dynamic)
 // in the spec

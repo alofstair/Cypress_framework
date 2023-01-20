@@ -14,10 +14,6 @@ export function tdselectOnpage (pageSelector, text) {
         .click()
 }
 
-export function  typeinAnitem(pageSelector, text) {
-    cy.get(pageSelector).type(text)
-}
-
 export function  clickAnitem(pageSelector) {
     cy.get(pageSelector).click()
 }
