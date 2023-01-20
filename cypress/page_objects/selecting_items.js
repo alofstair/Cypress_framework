@@ -21,3 +21,15 @@ export function  clickAnitem(pageSelector) {
 export function hasTextandClick(pageSelector, text){
     cy.get(pageSelector).should('have.text', text).click()
 }
+
+export function dropdownSelect(pageSelector, value){
+    cy.get(pageSelector).select(value)
+}
+
+export function checkboxCheck(pageSelector) {
+    cy.get('[type="checkbox"]').check(pageSelector)
+}
+
+export function checkboxUncheck(pageSelector) {
+    cy.get('[type="checkbox"]').uncheck(pageSelector)
+}
