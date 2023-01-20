@@ -21,7 +21,7 @@ Cypress.Commands.add('login', (url, username, password) => {
 //     });
 
 Cypress.Commands.add("clickLinkWithHrefDynamicPart[item]", (dynamic) => {
-    cy.get(`a[href*="${dynamic}/show_notify"]`).click();
+    cy.get(`a[href*="${dynamic}/]`).click();
 });
 // this will be paired with:
 // const  dynamic= "[vaue]"
