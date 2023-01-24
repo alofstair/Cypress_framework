@@ -9,10 +9,10 @@ module.exports = defineConfig({
     chromeWebSecurity: false,
     viewportWidth: 1500,
     viewportHeight: 760,
-    experimentalSessionAndOrigin: true,
-    env: {
-      env1: 'url',
-      env2: 'url',
-    }
+    experimentalSessionAndOrigin: true
+    //env: {
+    //  env1: 'url',
+    //  env2: 'url',
+    //}
   },
 });
