@@ -24,7 +24,7 @@ To install Applitools-eyes:
 first register with Applitools here - https://applitools.com/users/register
 Now in a terminal pointing at this project run - npm install @applitools/eyes-cypress
 Then run - npx eyes-setup
-You'll then need to configure your test to send tests to applitools - take a look at the "cds.spec.js" test for an example of how to do this
+You'll then need to configure your test to send tests to applitools 
 Or have a watch of lesson 8 in the TAU - introduction to cypress here - https://testautomationu.applitools.com/cypress-tutorial/chapter8.html
 Before running the test export the api key (which you can get from Applitools under your user avatar) in a terminal using the following command:
 export APPLITOOLS_API_KEY= {yourAPIKey}
