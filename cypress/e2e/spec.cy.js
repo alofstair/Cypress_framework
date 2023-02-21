@@ -18,7 +18,7 @@ describe('Interacting with web elements', () => {
   //afterEach(() => cy.eyesClose())
 
   it('This is a test', () => {
-    cy.visit('https://www.bbc.co.uk/')
+    //cy.visit('website')
     //itemSelect.hasTextandClick('#id or other page selector', 'text I want to assert on')
     //itemAssert.hasText('#id or other page selector', 'text I want to assert on')
     //testRecording.takeAscreenshot('Name I want to record screenshot as')
