@@ -15,7 +15,7 @@ describe('Interacting with web elements', () => {
   //or
   //applitoolsEyes.applitoolseyessingle('test', 'test', 'safari')
 
-  afterEach(() => cy.eyesClose())
+  //afterEach(() => cy.eyesClose())
 
   it('This is a test', () => {
     cy.visit('https://www.bbc.co.uk/')
