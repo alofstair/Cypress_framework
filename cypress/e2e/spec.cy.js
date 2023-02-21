@@ -9,19 +9,19 @@ import * as applitoolsEyes from '../page_objects/applitools_eyes_support'
 
 //Simple example
 describe('Interacting with web elements', () => {
-  //beforeEach(() =>{
+  //beforeEach(() =>{applitoolsEyes.applitoolseyessingle('test', 'test', 'safari')
   //});
-  //eyeshelp.applitoolseyes('test', 'test', 'chrome', 'edge', 'safari', 'firefox')
+  //applitoolsEyes.applitoolseyes('test', 'test', 'chrome', 'edge', 'safari', 'firefox')
   //or
-  //eyeshelp.applitoolseyessingle('test', 'test', 'safari')
+  //applitoolsEyes.applitoolseyessingle('test', 'test', 'safari')
 
-  //afterEach(() => cy.eyesClose())
+  afterEach(() => cy.eyesClose())
 
   it('This is a test', () => {
-    //cy.visit('[Page I want to test]')
+    cy.visit('https://www.bbc.co.uk/')
     //itemSelect.hasTextandClick('#id or other page selector', 'text I want to assert on')
     //itemAssert.hasText('#id or other page selector', 'text I want to assert on')
     //testRecording.takeAscreenshot('Name I want to record screenshot as')
-    //eyeshelp.eyesscreenshot(page I am sending to applitools)
+    //applitoolsEyes.eyesscreenshot('frontpage')
   })
 })
