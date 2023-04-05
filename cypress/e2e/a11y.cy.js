@@ -18,6 +18,7 @@ describe('a11y', () => {
 
     it('a11y_test ', () => {
         cy.injectAxe();
+        cy.step('A11y Test')
         cy.checkA11y();
     });
 });

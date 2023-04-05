@@ -17,12 +17,14 @@ describe('Logging in', () => {
   it('Log In - valid', () => {
     itemDefine.defineText('[data-test="password"]', 'secret_sauce')
     itemSelect.clickAnitem('#login-button')
+    cy.step('Successful log in assertion')
     itemAssert.hasText('.app_logo', 'Swag Labs')
   });
 
   it('Log In - invalid', () => {
     itemDefine.defineText('[data-test="password"]', 'invalid_password')
     itemSelect.clickAnitem('#login-button')
+    cy.step('Failed log in assertion')
     itemAssert.hasText('[data-test="error"]', 'Epic sadface: Username and password do not match any user in this service')
   });
 });

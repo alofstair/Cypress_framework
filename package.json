@@ -5,6 +5,7 @@
     "playwright-webkit": "^1.29.2"
   },
   "dependencies": {
-    "@applitools/eyes-cypress": "^3.29.1"
+    "@applitools/eyes-cypress": "^3.29.1",
+    "cypress-plugin-steps": "^1.1.1"
   }
 }

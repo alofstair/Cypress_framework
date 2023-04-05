@@ -6,7 +6,7 @@ import * as itemAssert from '../page_objects/asserting_items.js'
 import * as testRecording from '../page_objects/recording_tests'
 import * as applitoolsEyes from '../page_objects/applitools_eyes_support'
 import {clickAnitem} from "../page_objects/selecting_items.js";
-import {doesNotexist} from "../page_objects/asserting_items.js";
+import {doesNotexist, indexSelector} from "../page_objects/asserting_items.js";
 
 
 describe('Shopping', () => {
@@ -18,17 +18,25 @@ describe('Shopping', () => {
   });
 
   it('Choose and remove item from the main page', () => {
+    cy.step('Choose item')
     itemSelect.clickAnitem('#add-to-cart-sauce-labs-fleece-jacket')
+    cy.step('Checking the count')
     itemAssert.hasText('.shopping_cart_badge', '1')
+    cy.step('Removing the item')
     itemSelect.clickAnitem('#remove-sauce-labs-fleece-jacket')
+    cy.step('Checking the count is updated')
     itemAssert.doesNotexist('.shopping_cart_badge')
   });
 
   it('Interacting with the cart', () => {
+    cy.step('Adding items to the cart')
     itemSelect.clickAnitem('#add-to-cart-sauce-labs-fleece-jacket')
     itemSelect.clickAnitem('#add-to-cart-sauce-labs-bolt-t-shirt')
+    cy.step('Assert cart count')
     itemAssert.hasText('.shopping_cart_badge', '2')
+    cy.step('Visit the cart')
     itemSelect.clickAnitem('#shopping_cart_container')
-    //pick the nth one and assert on the header
+    cy.step('Find am item added')
+    itemAssert.indexSelectorContainsText('.cart_item', '1', 'Sauce Labs Bolt T-Shirt')
   });
 });

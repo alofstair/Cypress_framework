@@ -17,3 +17,8 @@ export function hasText(pageSelector, text) {
 export function doesNotexist(pageSelector) {
     cy.get(pageSelector).should('not.exist')
 }
+
+//From a list find the entry and assert on the index text
+export function indexSelectorContainsText(pageSelector, index, text) {
+    cy.get(pageSelector).eq(index).should('contain.text', text)
+}
