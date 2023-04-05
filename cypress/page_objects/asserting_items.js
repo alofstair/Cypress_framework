@@ -12,3 +12,8 @@ export function containsText(pageSelector, text) {
 export function hasText(pageSelector, text) {
     cy.get(pageSelector).should('have.text', text)
 }
+
+//This method looks at a pageSelector and assert the item doesn't exist
+export function doesNotexist(pageSelector) {
+    cy.get(pageSelector).should('not.exist')
+}
