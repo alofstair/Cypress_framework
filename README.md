@@ -29,3 +29,13 @@ Or have a watch of lesson 8 in the TAU - introduction to cypress here - https://
 Before running the test export the api key (which you can get from Applitools under your user avatar) in a terminal using the following command:
 export APPLITOOLS_API_KEY= {yourAPIKey}
 Now you can run your tests
+
+The tests run against https://www.saucedemo.com/ swag labs app 
+Users available are:
+standard_user
+locked_out_user
+problem_user
+performance_glitch_user
+
+All with the password:
+secret_sauce
