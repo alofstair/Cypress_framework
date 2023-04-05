@@ -12,6 +12,8 @@ In the cypress project you have created run the following from the command line.
 npm install --save-dev playwright-webkit
 Ensure that experimentalWebKitSupport: true is set in the cypress.config.js file
 
+#Axe#
+Run npm i -D cypress-axe in your terminal
 
 #Running Headless#
 To run headless when you don't have an npm script set up use the following command.

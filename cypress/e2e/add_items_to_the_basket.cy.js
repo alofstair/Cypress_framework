@@ -24,10 +24,11 @@ describe('Shopping', () => {
     itemAssert.doesNotexist('.shopping_cart_badge')
   });
 
-  it.only('Interacting with the cart', () => {
+  it('Interacting with the cart', () => {
     itemSelect.clickAnitem('#add-to-cart-sauce-labs-fleece-jacket')
     itemSelect.clickAnitem('#add-to-cart-sauce-labs-bolt-t-shirt')
     itemAssert.hasText('.shopping_cart_badge', '2')
     itemSelect.clickAnitem('#shopping_cart_container')
+    //pick the nth one and assert on the header
   });
 });

@@ -13,8 +13,8 @@
 // https://on.cypress.io/configuration
 // ***********************************************************
 
-import '@applitools/eyes-cypress/commands'
-
+import '@applitools/eyes-cypress/commands';
+import 'cypress-axe';
 
 // Import commands.js using ES2015 syntax:
 import './commands'
