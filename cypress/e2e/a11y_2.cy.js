@@ -9,7 +9,6 @@ Cypress.on('uncaught:exception', (err, runnable) => {
 //requires installation of the i-frame module from npm. Please see the readme for details
 
 import 'cypress-iframe';
-import * as suiteContent from '../../page-objects/suite-getter.js';
 import * as itemSelect from "../page_objects/selecting_items";
 
 describe('accessibility test automation with cypress axe', () => {
